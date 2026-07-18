@@ -59,7 +59,7 @@ h4,
 }
 
 .boarding-pass > div {
-  padding: 22px 20px;
+  padding: 16px;
   border-right: 1px dashed var(--line);
 }
 
@@ -78,4 +78,16 @@ h4,
   .boarding-pass > div:nth-child(4) {
     border-top: 1px dashed var(--line);
   }
+}
+
+@media (max-width:768px){
+
+.boarding-pass p{
+    font-size:15px;
+}
+
+.boarding-pass{
+    border-radius:20px;
+}
+
 }

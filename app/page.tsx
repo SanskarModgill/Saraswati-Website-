@@ -8,7 +8,7 @@ export default function Home() {
     <main className="bg-[var(--cream)] text-[var(--slate)]">
       {/* Hero */}
       <section
-        className="relative min-h-[88vh] flex items-center justify-center bg-cover bg-center -mt-20 pb-24"
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center -mt-20 pb-24"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1800&q=80')",
@@ -16,25 +16,25 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--ink)]/85 via-[var(--ink)]/75 to-[var(--ink)]" />
 
-        <div className="relative text-center px-6 pt-24 max-w-3xl">
+        <div className="relative text-center px-6 pt-20 md:pt-24 max-w-3xl">
           <span className="eyebrow">Registered Consultancy · Dhuri, Punjab</span>
-          <h1 className="mt-5 font-display text-5xl md:text-6xl font-semibold text-white leading-[1.05]">
+          <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-[1.05]">
             Study Abroad, <span className="text-[var(--gold)]">Guided Right</span>
           </h1>
-          <p className="mt-6 text-xl text-gray-300">
+          <p className="mt-6 text-base md:text-xl text-gray-300">
             Your gateway to global education — honest counselling for every
             step, from shortlisting a university to landing at your destination.
           </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/eligibility"
-              className="bg-[var(--gold)] text-black px-10 py-4 rounded-xl text-lg font-bold hover:brightness-95 transition shadow-lg shadow-black/20"
+              className="bg-[var(--gold)] text-black w-full sm:w-auto px-8 py-4 text-center rounded-xl text-lg font-bold hover:brightness-95 transition shadow-lg shadow-black/20"
             >
               Check My Eligibility — Free
             </Link>
             <Link
               href="/countries"
-              className="border-2 border-[var(--gold)] text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-[var(--gold)] hover:text-black transition"
+              className="border-2 border-[var(--gold)] text-white w-full sm:w-auto px-8 py-4 text-center rounded-xl text-lg font-bold hover:bg-[var(--gold)] hover:text-black transition"
             >
               Explore Countries
             </Link>
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* Trust strip, overlapping the hero edge */}
-        <div className="absolute -bottom-16 left-0 right-0 px-6">
+        <div className="absolute -bottom-20 md:-bottom-16 left-0 right-0 px-4 md:px-6">
           <div className="max-w-5xl mx-auto boarding-pass">
             <div>
               <div className="eyebrow">Destinations</div>
@@ -65,8 +65,8 @@ export default function Home() {
       </section>
 
       {/* Eligibility promo */}
-      <section className="max-w-6xl mx-auto px-6 pt-32 pb-8">
-        <div className="rounded-3xl bg-white border border-[var(--line)] p-8 md:p-10 grid md:grid-cols-[1.3fr_1fr] gap-8 items-center shadow-sm">
+      <section className="max-w-6xl mx-auto px-4 md: px-6 pt-32 pb-8">
+        <div className="rounded-3xl bg-white border border-[var(--line)] p-6 md:p-10 grid md:grid-cols-[1.3fr_1fr] gap-8 items-center shadow-sm">
           <div>
             <span className="eyebrow">Free Tool</span>
             <h2 className="mt-3 text-3xl font-semibold">
@@ -226,13 +226,13 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-block bg-[var(--gold)] text-black px-10 py-4 rounded-xl text-lg font-bold hover:brightness-95 transition"
+              className="inline-block bg-[var(--gold)] text-black w-full sm:w-auto px-8 py-4 text-center rounded-xl text-lg font-bold hover:brightness-95 transition"
             >
               Book Free Consultation
             </Link>
             <Link
               href="/eligibility"
-              className="inline-block border-2 border-white/30 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-white/10 transition"
+              className="inline-block border-2 border-white/30 text-white w-full sm:w-auto px-8 py-4 text-center rounded-xl text-lg font-bold hover:bg-white/10 transition"
             >
               Check Eligibility First
             </Link>
