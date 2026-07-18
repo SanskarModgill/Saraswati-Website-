@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #0B1F3A;
+  --charcoal: #163A70;
+  --gold: #d4a537;
+  --gold-soft: #F6E8B1;
+  --cream: #F8F7F2;
+  --slate: #44546A;
+  --muted: #6B7280;
+  --line: #E5E7EB;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--slate);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Boarding-pass style stat strip used on country pages */
+.boarding-pass {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px -24px rgba(11, 13, 18, 0.35);
+}
+
+.boarding-pass > div {
+  padding: 22px 20px;
+  border-right: 1px dashed var(--line);
+}
+
+.boarding-pass > div:last-child {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .boarding-pass {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .boarding-pass > div:nth-child(2) {
+    border-right: none;
+  }
+  .boarding-pass > div:nth-child(3),
+  .boarding-pass > div:nth-child(4) {
+    border-top: 1px dashed var(--line);
+  }
 }
