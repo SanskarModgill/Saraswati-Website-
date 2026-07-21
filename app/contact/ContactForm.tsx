@@ -1,5 +1,6 @@
 "use client";
 
+import { supabase } from "@/lib/supabase";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
@@ -7,6 +8,15 @@ export default function ContactForm() {
   const searchParams = useSearchParams();
   const prefilledCountry = searchParams.get("country") ?? "";
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    country: prefilledCountry,
+    message: "",
+  });
 
   if (submitted) {
     return (
@@ -29,46 +39,95 @@ export default function ContactForm() {
 
       <form
         className="mt-6 grid gap-4"
-        onSubmit={(e) => {
+        onSubmit={async (e) => {
           e.preventDefault();
-          // TODO: wire this up to your email/CRM endpoint
-          setSubmitted(true);
+
+          setLoading(true);
+
+          try {
+            const { error } = await supabase
+              .from("contact_forms")
+              .insert([form]);
+
+            if (error) {
+              throw error;
+            }
+
+            setForm({
+              name: "",
+              phone: "",
+              email: "",
+              country: prefilledCountry,
+              message: "",
+            });
+
+            setSubmitted(true);
+          } catch (error: any) {
+            console.error(error);
+            alert(error.message || "Something went wrong.");
+          } finally {
+            setLoading(false);
+          }
         }}
-      >
+              >
         <input
           type="text"
           required
+          value={form.name}
+          onChange={(e) =>
+            setForm({ ...form, name: e.target.value })
+          }
           placeholder="Full Name"
           className="border border-[var(--line)] p-4 rounded-lg focus:outline-none focus:border-[var(--gold)]"
         />
         <input
           type="tel"
           required
+          value={form.phone}
+          onChange={(e) =>
+            setForm({ ...form, phone: e.target.value })
+          }
           placeholder="Phone Number"
           className="border border-[var(--line)] p-4 rounded-lg focus:outline-none focus:border-[var(--gold)]"
         />
         <input
           type="email"
-          placeholder="Email (optional)"
+          required
+          value={form.email}
+          onChange={(e) =>
+            setForm({ ...form, email: e.target.value })
+          }
+          placeholder="Email ID"
           className="border border-[var(--line)] p-4 rounded-lg focus:outline-none focus:border-[var(--gold)]"
         />
         <input
           type="text"
-          defaultValue={prefilledCountry}
-          placeholder="Preferred Country"
+          required
+          value={form.country}
+          onChange={(e) =>
+            setForm({ ...form, country: e.target.value })
+          }
+          placeholder="Country"
           className="border border-[var(--line)] p-4 rounded-lg focus:outline-none focus:border-[var(--gold)]"
         />
         <textarea
           rows={4}
+          required
+          value={form.message}
+          onChange={(e) =>
+            setForm({ ...form, message: e.target.value })
+          }
           placeholder="Tell us about yourself"
           className="border border-[var(--line)] p-4 rounded-lg focus:outline-none focus:border-[var(--gold)]"
         />
 
         <button
           type="submit"
-          className="mt-2 bg-[var(--gold)] text-black px-8 py-4 rounded-xl font-bold text-lg hover:brightness-95 transition"
+          disabled={loading}
+          className="mt-2 bg-[var(--gold)] text-black px-8 py-4 rounded-xl font-bold text-lg hover:brightness-95 transition disabled:opacity-60"
         >
-          Send Message
+          {loading ? "Sending..." : "Send Message"}
+
         </button>
       </form>
     </div>
