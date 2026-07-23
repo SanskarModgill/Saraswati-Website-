@@ -142,7 +142,7 @@ export default function Home() {
             href="/countries"
             className="inline-block border-2 border-[var(--ink)] px-8 py-3 rounded-xl font-bold hover:bg-[var(--ink)] hover:text-white transition"
           >
-            View All 7 Destinations →
+            Explore All Destinations →
           </Link>
         </div>
       </section>
