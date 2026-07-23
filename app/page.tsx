@@ -46,11 +46,11 @@ export default function Home() {
           <div className="max-w-5xl mx-auto boarding-pass">
             <div>
               <div className="eyebrow">Destinations</div>
-              <p className="mt-2 font-display text-lg font-semibold">7 Countries</p>
+              <p className="mt-2 font-display text-lg font-semibold">10+ Countries</p>
             </div>
             <div>
               <div className="eyebrow">Visa Types</div>
-              <p className="mt-2 font-display text-lg font-semibold">Study · Work · PR · Visit</p>
+              <p className="mt-2 font-display text-lg font-semibold">Study · Work · PR · Visitor · Spouse</p>
             </div>
             <div>
               <div className="eyebrow">Approach</div>

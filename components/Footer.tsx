@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -45,8 +46,20 @@ export default function Footer() {
             Reach Us
           </h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li>📍 Opp. S. D. School, Pathshala Road, Dhuri</li>
-            <li>📞 +91 94177 11022</li>
+            <li className="flex items-center gap-2">
+              <MapPin size={18} />
+              Opp. S. D. School, Pathshala Road, Dhuri
+            </li>
+
+            <li className="flex items-center gap-2">
+              <Phone size={18} />
+              +91 98157 11133
+            </li>
+            
+            <li className="flex items-center gap-2">
+            <Mail size={18} />
+            saraswatiimmi@gmail.com
+            </li>
             <li>🕐 Mon – Sat, 10:00 AM – 6:30 PM</li>
           </ul>
         </div>
