@@ -25,7 +25,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-gray-300">
             <li><Link href="/countries/canada" className="hover:text-[var(--gold)]">Canada</Link></li>
             <li><Link href="/countries/uk" className="hover:text-[var(--gold)]">United Kingdom</Link></li>
-            <li><Link href="/countries/usa" className="hover:text-[var(--gold)]">United States</Link></li>
+            <li><Link href="/countries/singapore" className="hover:text-[var(--gold)]">Singapore</Link></li>
             <li><Link href="/countries" className="hover:text-[var(--gold)]">View all →</Link></li>
           </ul>
         </div>
