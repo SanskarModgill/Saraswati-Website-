@@ -64,12 +64,12 @@ export default async function CountryPage({
             <p className="mt-2 font-display text-lg font-semibold">{country.processingTime}</p>
           </div>
           <div>
-            <div className="eyebrow">Avg. Tuition</div>
+            <div className="eyebrow">Avg. Budget</div>
             <p className="mt-2 font-display text-lg font-semibold">{country.avgTuition}</p>
           </div>
           <div>
-            <div className="eyebrow">Popular Field</div>
-            <p className="mt-2 font-display text-lg font-semibold">{country.popularCourses[0]}</p>
+            <div className="eyebrow">IELTS/PTE</div>
+            <p className="mt-2 font-display text-lg font-semibold">{country.score}</p>
           </div>
         </div>
       </section>

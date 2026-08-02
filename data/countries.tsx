@@ -10,6 +10,7 @@ export interface Country {
   intakes: string;
   processingTime: string;
   avgTuition: string;
+  score: string,
   visaRequirements: string[];
 }
 
@@ -33,6 +34,7 @@ export const countries: Country[] = [
     intakes: "January · May · September",
     processingTime: "8–12 weeks (indicative)",
     avgTuition: "₹20 Lakhs+ per year",
+    score: "",
     visaRequirements: [
       "Letter of Acceptance from a Designated Learning Institution",
       "Proof of funds covering tuition and living costs",
@@ -60,6 +62,7 @@ export const countries: Country[] = [
     intakes: "January/February · April/May · September/October",
     processingTime: "6–10 weeks (indicative)",
     avgTuition: "15 Lakhs+ per year",
+    score: "",
     visaRequirements: [
       "Confirmation of Acceptance for Studies (CAS)",
       "Proof of maintenance funds for 28 consecutive days",
@@ -88,6 +91,7 @@ export const countries: Country[] = [
     intakes: "February/March · July/August",
     processingTime: "10–12 weeks (indicative)",
     avgTuition: "₹15 Lakhs+ per year",
+    score: "",
     visaRequirements: [
       "Offer of Place from a recognised institution",
       "Proof of sufficient funds",
@@ -115,6 +119,7 @@ export const countries: Country[] = [
     intakes: "February · July · November",
     processingTime: "12–16 weeks (indicative)",
     avgTuition: "₹15 Lakhs+ per year",
+    score: "",
     visaRequirements: [
       "Confirmation of Enrolment (CoE)",
       "Genuine Student requirement",
@@ -143,6 +148,7 @@ export const countries: Country[] = [
     intakes: "April · September",
     processingTime: "10–12 weeks (indicative)",
     avgTuition: "₹18 Lakhs+ per year",
+    score: "",
     visaRequirements: [
       "University admission letter",
       "Blocked account or financial proof",
@@ -170,6 +176,7 @@ export const countries: Country[] = [
     intakes: "February · October",
     processingTime: "8–12 weeks (indicative)",
     avgTuition: "7 Lakhs+ per year",
+    score: "Low Score",
     visaRequirements: [
       "Confirmed admission letter",
       "Proof of accommodation in Malta",
@@ -197,6 +204,7 @@ export const countries: Country[] = [
     intakes: "September · February",
     processingTime: "4–7 weeks (indicative)",
     avgTuition: "₹5–15 Lakh / year",
+    score: "",
     visaRequirements: [
       "University acceptance letter",
       "Proof of tuition fee payment",
@@ -224,6 +232,7 @@ export const countries: Country[] = [
     intakes: "September · January",
     processingTime: "3–5 weeks (indicative)",
     avgTuition: "₹4–9 Lakh / year",
+    score: "",
     visaRequirements: [
       "Admission letter from a registered institution",
       "Proof of accommodation",
@@ -251,6 +260,7 @@ export const countries: Country[] = [
     intakes: "January · July",
     processingTime: "3–5 weeks (indicative)",
     avgTuition: "₹10–22 Lakh / year",
+    score: "",
     visaRequirements: [
       "Confirmed enrolment with a registered institution",
       "Student's Pass In-Principle Approval (IPA)",
