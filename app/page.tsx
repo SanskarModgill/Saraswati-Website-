@@ -1,9 +1,12 @@
+"use client";
 import Link from "next/link";
 import { countries } from "../data/countries";
+import { useEffect, useState } from "react";
 
 const featuredCountries = countries.slice(0, 6);
 
 export default function Home() {
+  
   return (
     <main className="bg-[var(--cream)] text-[var(--slate)]">
       {/* Hero */}
@@ -50,7 +53,7 @@ export default function Home() {
             </div>
             <div>
               <div className="eyebrow">Visa Types</div>
-              <p className="mt-2 font-display text-lg font-semibold">Study · Work · PR · Visitor · Spouse</p>
+              <p className="mt-2 font-display text-lg font-semibold">Study · Visitor · Spouse · PR</p>
             </div>
             <div>
               <div className="eyebrow">Approach</div>
@@ -239,6 +242,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
     </main>
   );
 }
