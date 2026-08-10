@@ -25,6 +25,28 @@ export const metadata: Metadata = {
   title: "Saraswati Immigration & Travel Services | Dhuri",
   description:
     "Saraswati Immigration & Travel Services, Dhuri — study visas, work visas, PR guidance and travel assistance for Canada, UK, USA, Malta, Cyprus, Mauritius and Singapore.",
+    keywords: [
+    "immigration consultant in Dhuri",
+    "visa consultant in Dhuri",
+    "immigration services in Dhuri",
+    "student visa consultant Dhuri",
+    "study abroad consultant Dhuri",
+    "visa consultancy Punjab",
+    "immigration services",
+    "visa consultant",
+    "study abroad",
+    "canada study visa",
+    "mauritius study visa",
+    "australia study visa"
+  ],
+  openGraph: {
+    title: "Saraswati Immigration & Travel Services",
+    description:
+      "Immigration, visa and study abroad consultancy services in Dhuri, Punjab.",
+    url: "https://saraswatiimmigration.com",
+    siteName: "Saraswati Immigration & Travel Services",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
