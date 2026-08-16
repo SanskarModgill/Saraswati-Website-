@@ -16,8 +16,8 @@ export async function generateMetadata({
   const country = getCountry(slug);
   if (!country) return { title: "Destination Not Found" };
   return {
-    title: `Study in ${country.name} | Saraswati Immigration & Travel Services`,
-    description: country.overview,
+    title: `Study in ${country.name} | Student Visa & Admission Guidance`,
+    description: `Explore study opportunities in ${country.name}, including student visa requirements, admission guidance, popular courses, costs and application information.`,
   };
 }
 
@@ -105,7 +105,7 @@ export default async function CountryPage({
           </div>
 
           <div className="mt-10 rounded-2xl bg-[var(--ink)] text-white p-8">
-            <span className="eyebrow">Visa Requirements Checklist</span>
+            <span className="eyebrow">Student Visa Requirements</span>
             <ul className="mt-4 space-y-3">
               {country.visaRequirements.map((req) => (
                 <li key={req} className="flex gap-3 text-sm text-gray-300">
