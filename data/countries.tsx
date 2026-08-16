@@ -61,7 +61,7 @@ export const countries: Country[] = [
     popularCourses: ["MBA", "Data Science", "Law", "Public Health", "Finance"],
     intakes: "January/February · April/May · September/October",
     processingTime: "6–8 weeks (indicative)",
-    avgTuition: "15 Lakhs and Above",
+    avgTuition: "₹15 Lakhs and Above",
     score: "Required",
     visaRequirements: [
       "Confirmation of Acceptance for Studies (CAS)",
@@ -175,7 +175,7 @@ export const countries: Country[] = [
     popularCourses: ["Business Studies", "Tourism Management", "IT & Gaming", "Finance", "Aviation"],
     intakes: "February · October",
     processingTime: "8–12 weeks (indicative)",
-    avgTuition: "7 Lakhs and Above",
+    avgTuition: "₹7 Lakhs and Above",
     score: "Not Required",
     visaRequirements: [
       "Confirmed admission letter",
@@ -231,7 +231,7 @@ export const countries: Country[] = [
     popularCourses: ["Business Management", "IT", "Hospitality & Tourism", "Finance", "Marine Studies"],
     intakes: "September · January",
     processingTime: "3–5 weeks (indicative)",
-    avgTuition: "₹4 Lakhs and Above",
+    avgTuition: "₹3 to 4 Lakhs",
     score: "Not Required",
     visaRequirements: [
       "Admission letter from a registered institution",
@@ -259,7 +259,7 @@ export const countries: Country[] = [
     popularCourses: ["Finance", "Computer Science", "Supply Chain Management", "Business Analytics", "Hospitality"],
     intakes: "January · July",
     processingTime: "4–6 weeks (indicative)",
-    avgTuition: "3.5 to 5 Lakhs",
+    avgTuition: "₹3.5 to 5 Lakhs",
     score: "Not Required",
     visaRequirements: [
       "Confirmed enrolment with a registered institution",
