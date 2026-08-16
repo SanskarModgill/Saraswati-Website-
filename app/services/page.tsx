@@ -119,6 +119,12 @@ export default function ServicesPage() {
           >
             Book Free Consultation
           </Link>
+          <Link
+            href="/countries"
+            className="mt-4 inline-block border-2 border-[var(--ink)] px-8 py-3 rounded-xl font-bold hover:bg-[var(--ink)] hover:text-white transition"
+          >
+            Explore Study Destinations →
+          </Link>
         </div>
       </section>
     </main>
