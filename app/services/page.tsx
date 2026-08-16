@@ -84,7 +84,9 @@ export default function ServicesPage() {
           Our Services
         </h1>
         <p className="mt-5 text-gray-400 max-w-2xl mx-auto">
-          Explore student visa, admission guidance, visitor visa, PR and immigration, and travel assistance from Saraswati Immigration & Travel Services in Dhuri, Punjab.
+          From university admission and student visas to visitor visas, PR and
+          immigration guidance, and travel assistance, we help students and families
+          navigate their journey abroad.
         </p>
       </section>
 
