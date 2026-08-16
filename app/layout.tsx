@@ -46,6 +46,27 @@ export default function RootLayout({
       className={`${inter.variable} ${Playfair_display.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--cream)] text-[var(--slate)]">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Saraswati Immigration & Travel Services",
+              url: "https://saraswatiimmigration.com",
+              telephone: "98157-11133",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress:
+                  "W. No. 15B, Opp. S D School Gate, Pathshala Mohalla",
+                addressLocality: "Dhuri",
+                addressRegion: "Punjab",
+                postalCode: "148024",
+                addressCountry: "IN",
+              },
+            }),
+          }}
+        />
         <Navbar />
         <div className="flex-1 pt-20">{children}</div>
         <Footer />
