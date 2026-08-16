@@ -60,7 +60,7 @@ export const countries: Country[] = [
     ],
     popularCourses: ["MBA", "Data Science", "Law", "Public Health", "Finance"],
     intakes: "January/February · April/May · September/October",
-    processingTime: "6–10 weeks (indicative)",
+    processingTime: "6–8 weeks (indicative)",
     avgTuition: "15 Lakhs and Above",
     score: "Required",
     visaRequirements: [
