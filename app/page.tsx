@@ -227,9 +227,21 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { n: "01", title: "Honest Assessments", desc: "We tell you clearly if a profile isn't ready yet, and exactly what to fix — instead of filing a weak application." },
-              { n: "02", title: "Local & Accessible", desc: "Based right in Dhuri, opposite S. D. School — walk in anytime for an in-person update on your file." },
-              { n: "03", title: "End-to-End Support", desc: "From SOPs to interview mocks, one team stays with you from application to arrival." },
+              {
+                n: "01",
+                title: "Honest Assessments",
+                desc: "We assess your academic profile, goals and circumstances honestly and explain which study, visa or immigration options may be suitable for you.",
+              },
+              {
+                n: "02",
+                title: "Personalised Guidance",
+                desc: "From choosing a course and university to preparing your visa application, we provide one-to-one guidance based on your profile and goals.",
+              },
+              {
+                n: "03",
+                title: "End-to-End Support",
+                desc: "Our support can continue from admission and documentation through visa processing, pre-departure preparation and travel assistance.",
+              },
             ].map((item) => (
               <div
                 key={item.n}
