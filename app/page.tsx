@@ -111,10 +111,14 @@ export default function Home() {
       <section id="countries" className="max-w-7xl mx-auto py-20 px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="eyebrow">Where You Could Go</span>
-          <h2 className="mt-3 text-4xl font-semibold">Study Destinations</h2>
+          <h2 className="mt-3 text-4xl font-semibold">
+            Study Abroad Destinations
+          </h2>
+
           <p className="mt-4 text-[var(--muted)]">
-            Each country has its own visa process, intake calendar and cost of
-            living. Open a destination to see exactly what it takes.
+            Explore study destinations and get guidance on university admissions,
+            student visas, eligibility, application requirements and the journey
+            ahead.
           </p>
         </div>
 
