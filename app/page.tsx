@@ -22,11 +22,14 @@ export default function Home() {
         <div className="relative text-center px-6 pt-20 md:pt-24 max-w-3xl">
           <span className="eyebrow">Registered Consultancy · Dhuri, Punjab</span>
           <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-[1.05]">
-            Study Abroad, <span className="text-[var(--gold)]">Guided Right</span>
+            Immigration & Visa Services for Your{" "}
+            <span className="text-[var(--gold)]">Study Abroad Journey</span>
           </h1>
+
           <p className="mt-6 text-base md:text-xl text-gray-300">
-            Your gateway to global education — honest counselling for every
-            step, from shortlisting a university to landing at your destination.
+            Get honest guidance for student visas, university admissions and study
+            abroad opportunities — from choosing the right destination to preparing
+            your application and getting ready to travel.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Link
