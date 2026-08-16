@@ -117,7 +117,7 @@ export const countries: Country[] = [
     ],
     popularCourses: ["Nursing", "Engineering", "Business", "Data Science", "Hospitality"],
     intakes: "February · July · November",
-    processingTime: "12–16 weeks (indicative)",
+    processingTime: "8–12 weeks (indicative)",
     avgTuition: "₹15 Lakhs and Above",
     score: "Required",
     visaRequirements: [
