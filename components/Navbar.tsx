@@ -27,7 +27,7 @@ export default function Navbar() {
             </h1>
 
             <p className="text-xs md:text-sm text-gray-400 tracking-wide">
-              Travel Services
+              & Travel Services
             </p>
           </div>
         </div>
