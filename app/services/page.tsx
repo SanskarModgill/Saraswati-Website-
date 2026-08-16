@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Services | Saraswati Immigration & Travel Services",
+  title: "Immigration & Visa Services | Saraswati Immigration",
   description:
-    "Student visa assistance, admission guidance, work & PR pathways, and travel assistance from Saraswati Immigration & Travel Services, Dhuri.",
+    "Explore student visa, admission guidance, visitor visa, PR and immigration, and travel assistance from Saraswati Immigration & Travel Services.",
 };
 
 const services = [
