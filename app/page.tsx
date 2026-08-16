@@ -163,9 +163,31 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: "🎓", title: "Student Visa", desc: "Complete visa assistance from admission through to approval." },
-              { icon: "🏛", title: "Admission Guidance", desc: "University selection matched to your budget and goals." },
-              { icon: "✈", title: "Travel Assistance", desc: "Flights, accommodation and pre-departure briefing, sorted." },
+              {
+                icon: "🎓",
+                title: "Student Visa",
+                desc: "Complete student visa assistance from application and documentation through to approval.",
+              },
+              {
+                icon: "🏛",
+                title: "Admission Guidance",
+                desc: "Guidance in choosing universities and courses that match your academic profile, goals and budget.",
+              },
+              {
+                icon: "🛂",
+                title: "Visitor Visa",
+                desc: "Guidance with visitor visa applications, documentation and the application process.",
+              },
+              {
+                icon: "🌍",
+                title: "PR & Immigration",
+                desc: "Immigration guidance for individuals exploring permanent residency and long-term opportunities abroad.",
+              },
+              {
+                icon: "✈️",
+                title: "Travel Assistance",
+                desc: "Flight, accommodation and pre-departure assistance to help you prepare for your journey.",
+              },
             ].map((s) => (
               <div
                 key={s.title}
@@ -199,7 +221,7 @@ export default function Home() {
             <h2 className="mt-3 text-4xl font-semibold">Why Choose Us?</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { n: "01", title: "Honest Assessments", desc: "We tell you clearly if a profile isn't ready yet, and exactly what to fix — instead of filing a weak application." },
               { n: "02", title: "Local & Accessible", desc: "Based right in Dhuri, opposite S. D. School — walk in anytime for an in-person update on your file." },
