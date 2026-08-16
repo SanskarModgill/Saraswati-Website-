@@ -145,9 +145,9 @@ export const countries: Country[] = [
       "Opportunities for post-study employment",
     ],
     popularCourses: ["Mechanical Engineering", "Computer Science", "Automotive Engineering", "Business", "Artificial Intelligence"],
-    intakes: "April · September",
-    processingTime: "10–12 weeks (indicative)",
-    avgTuition: "₹18 Lakhs and Above",
+    intakes: "May · September",
+    processingTime: "8–12 weeks (indicative)",
+    avgTuition: "₹15 Lakhs and Above",
     score: "Required",
     visaRequirements: [
       "University admission letter",
