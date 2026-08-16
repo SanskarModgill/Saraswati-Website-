@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Immigration & Visa Services | Saraswati Immigration",
   description:
-    "Explore student visa, admission guidance, visitor visa, PR and immigration, and travel assistance from Saraswati Immigration & Travel Services.",
+  "Explore student visa, admission guidance, visitor visa, PR and immigration, and travel assistance from Saraswati Immigration & Travel Services in Dhuri, Punjab.",
 };
 
 const services = [
@@ -32,14 +32,13 @@ const services = [
   },
   {
     icon: "🛂",
-    title: "Work & PR Pathways",
-    summary: "Guidance on skilled worker programs and permanent residency routes.",
-    details: [
-      "Eligibility review for Express Entry, PNP and similar programs",
-      "Job-offer based and employer-sponsored visa routes",
-      "Points-based profile improvement suggestions",
-      "Documentation support for PR filing",
-    ],
+    title: "PR & Immigration Pathways",
+    summary: "Guidance for individuals exploring permanent residency and immigration pathways.",    details: [
+      "Profile assessment for immigration pathways",
+      "Guidance on eligibility and documentation",
+      "Application preparation and documentation support",
+      "Guidance throughout the immigration process",
+        ],
   },
   {
     icon: "✈",
