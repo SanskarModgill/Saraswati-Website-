@@ -258,8 +258,8 @@ export const countries: Country[] = [
     ],
     popularCourses: ["Finance", "Computer Science", "Supply Chain Management", "Business Analytics", "Hospitality"],
     intakes: "January · July",
-    processingTime: "3–5 weeks (indicative)",
-    avgTuition: "₹10 Lakhs and Above",
+    processingTime: "4–6 weeks (indicative)",
+    avgTuition: "3.5 to 5 Lakhs",
     score: "Not Required",
     visaRequirements: [
       "Confirmed enrolment with a registered institution",
