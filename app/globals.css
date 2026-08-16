@@ -18,7 +18,7 @@ html {
 body {
   background: var(--cream);
   color: var(--slate);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-montse), sans-serif;
 }
 
 h1,
@@ -31,7 +31,7 @@ h4,
 }
 
 .eyebrow {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-montse), sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.14em;
