@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Montserrat, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 
-const Montse = Montserrat({
-  variable: "--font-montse",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${Montse.variable} ${Playfair_display.variable} h-full antialiased`}
+      className={`${inter.variable} ${Playfair_display.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--cream)] text-[var(--slate)]">
         <Navbar />
