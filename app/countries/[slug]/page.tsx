@@ -17,7 +17,7 @@ export async function generateMetadata({
   if (!country) return { title: "Destination Not Found" };
   return {
     title: `Study in ${country.name} | Student Visa & Admission Guidance`,
-    description: `Explore study opportunities in ${country.name}, including student visa requirements, admission guidance, popular courses, costs and application information.`,
+    description: `${country.overview} Get guidance on student visa requirements, university admissions, popular courses and studying in ${country.name}.`,
   };
 }
 
