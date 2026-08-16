@@ -21,7 +21,7 @@ export default function Navbar() {
 
             />
 
-          <div>
+          <Link href="/" className="block">
             <h1 className="text-lg md:text-2xl font-extrabold tracking-wide text-yellow-400">
               Saraswati Immigration
             </h1>
@@ -29,7 +29,7 @@ export default function Navbar() {
             <p className="text-xs md:text-sm text-gray-400 tracking-wide">
               & Travel Services
             </p>
-          </div>
+          </Link>
         </div>
 
         <button
