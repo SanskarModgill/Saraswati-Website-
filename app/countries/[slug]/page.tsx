@@ -118,6 +118,12 @@ export default async function CountryPage({
               Requirements are indicative and change periodically — we confirm
               the current checklist with you during your consultation.
             </p>
+            <Link
+              href="/services"
+              className="mt-6 inline-flex items-center text-[var(--gold)] font-semibold hover:underline"
+            >
+              Explore our visa & admission services →
+            </Link>
           </div>
         </div>
       </section>
