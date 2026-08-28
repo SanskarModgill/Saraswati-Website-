@@ -224,6 +224,7 @@ export const countries: Country[] = [
       "Mauritius is emerging as an accessible study destination, hosting offshore campuses of established international universities with close cultural and historical ties to India, at a fraction of the typical cost.",
     whyStudy: [
       "Offshore campuses of recognised international universities",
+      "A gateway to international opportunities",
       "Significantly lower tuition and living costs",
       "Strong cultural familiarity for Indian students",
       "Compact, safe island with easy campus access",
