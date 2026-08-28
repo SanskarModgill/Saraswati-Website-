@@ -230,8 +230,8 @@ export const countries: Country[] = [
       "Compact, safe island with easy campus access",
     ],
     popularCourses: ["Business Management", "IT", "Hospitality & Tourism", "Finance", "Marine Studies"],
-    intakes: "September · January",
-    processingTime: "3–5 weeks (indicative)",
+    intakes: "January · September",
+    processingTime: "6–8 weeks (indicative)",
     avgTuition: "₹3 to 4 Lakhs",
     score: "Not Required",
     visaRequirements: [
