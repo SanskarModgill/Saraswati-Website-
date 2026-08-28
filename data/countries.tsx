@@ -258,7 +258,7 @@ export const countries: Country[] = [
       "Short flight distance and time-zone proximity to India",
     ],
     popularCourses: ["Finance", "Computer Science", "Supply Chain Management", "Business Analytics", "Hospitality"],
-    intakes: "January · July",
+    intakes: "Rolling (Apply Throughout the Year)",
     processingTime: "6–8 weeks (indicative)",
     avgTuition: "₹3.5 to 5 Lakhs",
     score: "Not Required",
