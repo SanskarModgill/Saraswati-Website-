@@ -204,7 +204,7 @@ export const countries: Country[] = [
     intakes: "September · February",
     processingTime: "4–7 weeks (indicative)",
     avgTuition: "₹5 Lakhs and Above",
-    score: "Not Required",
+    score: "Eligible with Low score",
     visaRequirements: [
       "University acceptance letter",
       "Proof of tuition fee payment",
